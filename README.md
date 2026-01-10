@@ -4,12 +4,12 @@ Telegram-бот с AI-ассистентом, погодой, курсами в�
 
 ## 🚀 Возможности
 
-- 🤖 **AI-ассистент** (Mistral AI)
+- 🤖 **AI-ассистент**
   - Обычный режим
   - Специализированный кино-режим
 - 🎬 **Подбор фильмов** по жанрам
 - 🌤 **Погода** в любом городе
-- 💰 **Курсы валют** 
+- 💰 **Курсы валют**
 - 📊 **Отслеживание цен** на Wildberries и Ozon
 - ⏰ **Напоминания и таймеры**
 - 🎤 **Транскрибация** голосовых сообщений
@@ -19,7 +19,7 @@ Telegram-бот с AI-ассистентом, погодой, курсами в�
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/deadogdas/tg_bot.git
+git clone https://github.com/deadogdas/tg_bot_new.git
 cd tg_bot
 ```
 
@@ -47,9 +47,8 @@ cp .env.example .env
 
 ```env
 BOT_TOKEN=your_bot_token
-AI_KEY=your_mistral_key
 WEATHER_KEY=your_weather_key
-OPENAI_KEY=your_openai_key  # опционально
+OPENAI_KEY=your_openai_key
 ```
 
 ## 🎮 Использование
@@ -80,9 +79,14 @@ python main.py
 **Финансы:**
 
 - `/usd` — курс доллара
+- `/eur` - курс евро
+- `/cny` - курс юань
 - `/btc` — курс Bitcoin
+- `/eth` - курс Ethereum
+- `/doge` - курс Dogecoin
+- `/sol` - курс Solana
 
-**Погода:**
+  **Погода:**
 
 - `/weather <город>` — погода
 
@@ -104,7 +108,7 @@ python main.py
 ## 🔑 Получение API ключей
 
 - **Telegram Bot Token**: [@BotFather](https://t.me/BotFather)
-- **Mistral AI**: [console.mistral.ai](https://console.mistral.ai)
+- **Openrouter**: [console.openrouter.ai](https://openrouter.ai/settings/keys)
 - **OpenWeatherMap**: [openweathermap.org/api](https://openweathermap.org/api)
 - **OpenAI** (опционально): [platform.openai.com](https://platform.openai.com)
 
