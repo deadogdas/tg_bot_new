@@ -28,7 +28,12 @@ async def handle_help(message: Message):
 
 💰 Финансы:
 /usd — курс доллара
+/eur - курс евро
+/cny - курс юань
 /btc — курс Bitcoin
+/eth - курс Ethereum
+/doge - курс Dogecoin
+/sol - курс Solana
 
 🌤 Погода:
 /weather <город> — погода в городе
