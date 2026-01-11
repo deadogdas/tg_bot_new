@@ -12,7 +12,9 @@ from handlers.voice import get_router_voice
 from handlers.price_tracker import get_router_price
 from handlers.reminders import get_router_reminders, restart_all_reminders
 from weather.weather import get_router_weather
-from handlers.summary import get_router_summary 
+from handlers.summary import get_router_summary
+from handlers.music import get_router_music
+
 
 async def main():
     setup_logger()
@@ -29,6 +31,7 @@ async def main():
     dp.include_router(get_router_price())
     dp.include_router(get_router_reminders())
     dp.include_router(get_router_summary())
+    dp.include_router(get_router_music())
     dp.include_router(get_ai_router())
     
     # Перезапускаем все активные напоминания
